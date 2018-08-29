@@ -2,12 +2,12 @@
     "@context": "http://clowder.ncsa.illinois.edu/contexts/extractors.jsonld",
     "name": "ncsa.csvheaders",
     "version": "1.0",
-    "description": "Extracts the headers of CSV file",
+    "description": "Extracts the headers of CSV file. Only looks at the first row.",
     "author": "Yan Zhao <yanzhao3@illinois.edu>",
-    "contributors": ["Yan Zhao <yanzhao3@illinois.edu>"],
+    "contributors": ["Luigi Marini <lmarini@illinois.edu>"],
     "contexts": [
         {
-            "mean grayscale value": "http://clowder.ncsa.illinois.edu/metadata/ncsa.csvheaders#headers"
+            "csv_headers": "http://clowder.ncsa.illinois.edu/metadata/ncsa.csvheaders#csv_headers"
         }
     ],
     "repository": [
