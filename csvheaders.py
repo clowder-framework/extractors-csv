@@ -20,10 +20,7 @@ class csvHeaders(Extractor):
             headers = next(reader)
         metadata = {'csv_headers': headers}
         logger.debug(metadata)        
-        result = {
-            'metadata': metadata
-        }
-        return result
+        return metadata
 
     def process_message(self, connector,host, secret_key,resource, parameters):
         inputfile = resource["local_paths"][0]
