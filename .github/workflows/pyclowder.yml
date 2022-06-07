@@ -7,6 +7,10 @@ on:
     branches:
       - main
 
+  repository_dispatch:
+    types:
+      - pyclowder  
+
   schedule:
     - cron: '0 0 * * *'
 
